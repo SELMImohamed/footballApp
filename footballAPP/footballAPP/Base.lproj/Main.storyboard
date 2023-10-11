@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +15,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="second" id="ntK-y3-P01" userLabel="getAllTeams" customClass="DisplayTeamsTableViewController" customModule="footballAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ct1-5t-RVP">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -50,18 +51,34 @@
         <!--get all match-->
         <scene sceneID="Ukq-ID-8DY">
             <objects>
-                <tableViewController id="iC5-t6-jsm" userLabel="get all match" sceneMemberID="viewController">
+                <tableViewController id="iC5-t6-jsm" userLabel="get all match" customClass="DisplayAllGamesTableViewController" customModule="footballAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Dbv-MR-uTN">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Résultat des matchs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cN6-uJ-mKP">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="VLK-Ch-MHw">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuse" textLabel="CRb-A0-rBk" style="IBUITableViewCellStyleDefault" id="VLK-Ch-MHw">
+                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VLK-Ch-MHw" id="Kxu-Iw-oau">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CRb-A0-rBk">
+                                            <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -70,10 +87,11 @@
                             <outlet property="delegate" destination="iC5-t6-jsm" id="4kd-BZ-Ft8"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="u4f-Ng-IXo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EF8-aq-UV4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9525" y="1379"/>
+            <point key="canvasLocation" x="9524.4274809160306" y="1378.8732394366198"/>
         </scene>
         <!--get a specific game-->
         <scene sceneID="pQM-Rz-Cg3">
@@ -151,7 +169,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="96J-jC-ULZ">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.070588238540000001" green="0.062745101750000004" blue="0.066666662690000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="64o-vN-b13" kind="relationship" relationship="viewControllers" id="K0a-Y9-sTX"/>
@@ -171,36 +191,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmi-js-3PX">
-                                <rect key="frame" x="129" y="156" width="62" height="35"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1a34366c388e7db9f95f22f5639e0a0a" translatesAutoresizingMaskIntoConstraints="NO" id="TjS-G4-ac4">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stats-your-basket-low-resolution-logo-color-on-transparent-background" translatesAutoresizingMaskIntoConstraints="NO" id="7gt-l2-cLn">
+                                <rect key="frame" x="76" y="59" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTW-Bv-ZRG">
-                                <rect key="frame" x="123" y="318" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-w3-Ujk">
-                                <rect key="frame" x="123" y="453" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoh-0w-wF2">
-                                <rect key="frame" x="123" y="579" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                            </button>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" misplaced="YES" layoutMarginsFollowReadableWidth="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="YLy-sB-WXa">
+                                <rect key="frame" x="0.0" y="509" width="393" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTW-Bv-ZRG">
+                                        <rect key="frame" x="99.666666666666686" y="0.0" width="194" height="38"/>
+                                        <color key="tintColor" red="0.66666668650000005" green="0.3058823645" blue="0.1764705926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Voir la liste des joueurs" image="list.bullet.clipboard" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Voir la liste des joueurs" buttonSize="small">
+                                            <imageReference key="image" image="list.bullet.clipboard" catalog="system" symbolScale="default"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="getAllteams:" destination="64o-vN-b13" eventType="touchUpInside" id="uDJ-83-89Z"/>
+                                            <segue destination="ntK-y3-P01" kind="presentation" identifier="showDisplayTeams" id="0cY-Wq-e32"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-w3-Ujk">
+                                        <rect key="frame" x="82.333333333333329" y="111" width="228.66666666666669" height="38"/>
+                                        <color key="tintColor" red="0.66666668650000005" green="0.3058823645" blue="0.1764705926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="basketball" catalog="system" title="Voir la liste des matchs "/>
+                                        <connections>
+                                            <segue destination="iC5-t6-jsm" kind="presentation" identifier="showDisplayGame" id="3JX-Th-ano"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoh-0w-wF2">
+                                        <rect key="frame" x="159" y="222" width="75" height="38"/>
+                                        <color key="tintColor" red="0.66666668650000005" green="0.3058823645" blue="0.1764705926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y4L-wV-H2c"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <color key="tintColor" red="0.94328010082244873" green="0.55682784486723058" blue="0.16703943750776809" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TjS-G4-ac4" secondAttribute="bottom" id="B0d-xS-nRC"/>
+                            <constraint firstItem="y4L-wV-H2c" firstAttribute="bottom" secondItem="YLy-sB-WXa" secondAttribute="bottom" constant="50" id="Gxj-UI-VkQ"/>
+                            <constraint firstItem="y4L-wV-H2c" firstAttribute="trailing" secondItem="TjS-G4-ac4" secondAttribute="trailing" id="KfU-8Z-OjN"/>
+                            <constraint firstItem="YLy-sB-WXa" firstAttribute="leading" secondItem="y4L-wV-H2c" secondAttribute="leading" id="Om9-cn-cHU"/>
+                            <constraint firstItem="TjS-G4-ac4" firstAttribute="leading" secondItem="y4L-wV-H2c" secondAttribute="leading" id="hTq-FJ-AQc"/>
+                            <constraint firstItem="y4L-wV-H2c" firstAttribute="trailing" secondItem="YLy-sB-WXa" secondAttribute="trailing" id="j7k-pw-gHn"/>
+                            <constraint firstItem="YLy-sB-WXa" firstAttribute="top" secondItem="y4L-wV-H2c" secondAttribute="top" constant="400" id="jOp-0l-pO8"/>
+                            <constraint firstItem="TjS-G4-ac4" firstAttribute="top" secondItem="nZE-J3-jdy" secondAttribute="top" id="s7W-dM-VPs"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Menu" image="house.fill" catalog="system" id="ebz-AS-RaX"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="house.fill" catalog="system" id="ebz-AS-RaX">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="button1" destination="j4g-w3-Ujk" id="2jT-js-8hD"/>
                         <outlet property="button2" destination="j4g-w3-Ujk" id="k1p-7f-rzc"/>
@@ -230,7 +278,9 @@
                         <viewLayoutGuide key="safeArea" id="XaD-wg-Hwy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="questionmark" catalog="system" id="dbJ-va-pJb"/>
+                    <tabBarItem key="tabBarItem" title="" image="questionmark" catalog="system" id="dbJ-va-pJb">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vbz-GE-oVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,13 +312,24 @@
             <point key="canvasLocation" x="11436" y="534"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="tintColor"/>
     <resources>
+        <image name="1a34366c388e7db9f95f22f5639e0a0a" width="564" height="1222"/>
+        <image name="basketball" catalog="system" width="128" height="123"/>
         <image name="c946a7c50e7ce0c02bf483b1d30ddc6d" width="555" height="1200"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet.clipboard" catalog="system" width="98" height="128"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="questionmark" catalog="system" width="94" height="128"/>
+        <image name="stats-your-basket-low-resolution-logo-color-on-transparent-background" width="1000" height="351"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

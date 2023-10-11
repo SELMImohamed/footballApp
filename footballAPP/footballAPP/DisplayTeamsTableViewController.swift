@@ -10,19 +10,19 @@ import WebKit
 
 struct Teams {
     var name : String
-    var urlPage : String
+    var city : String
 }
 
 extension Teams {
     init?(json:[String: AnyObject]){
         guard let name = json["full_name"] as? String,
-              let url = json["city"] as? String
+              let city = json["city"] as? String
         else{
             return nil
         }
         
         self.name = name
-        self.urlPage = url
+        self.city = city
     }
 }
 
@@ -95,7 +95,7 @@ class DisplayTeamsTableViewController: UITableViewController {
 
         // Configure the cell...
         let teams = self.browsers[indexPath.row]
-        cell.textLabel?.text = teams.name + " " + teams.urlPage
+        cell.textLabel?.text = teams.name + " " + teams.city
        
 
         
