@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F05244D2AD6BF5F00A4CCB7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05244C2AD6BF5F00A4CCB7 /* HomeViewController.swift */; };
+		5F05244F2AD6DA9D00A4CCB7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05244E2AD6DA9D00A4CCB7 /* MenuViewController.swift */; };
 		5F186AF42AD5EAC1008785ED /* DisplayTeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F186AF32AD5EAC1008785ED /* DisplayTeamsTableViewController.swift */; };
 		8B11D8A02AD59BFF00AF0AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D89F2AD59BFF00AF0AAD /* AppDelegate.swift */; };
 		8B11D8A22AD59BFF00AF0AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D8A12AD59BFF00AF0AAD /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		5F05244C2AD6BF5F00A4CCB7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5F05244E2AD6DA9D00A4CCB7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		5F186AF32AD5EAC1008785ED /* DisplayTeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTeamsTableViewController.swift; sourceTree = "<group>"; };
 		8B11D89C2AD59BFF00AF0AAD /* footballAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = footballAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B11D89F2AD59BFF00AF0AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				8B11D8A12AD59BFF00AF0AAD /* SceneDelegate.swift */,
 				8B11D8A32AD59BFF00AF0AAD /* ViewController.swift */,
 				8B11D8A52AD59BFF00AF0AAD /* Main.storyboard */,
+				5F05244E2AD6DA9D00A4CCB7 /* MenuViewController.swift */,
 				5F05244C2AD6BF5F00A4CCB7 /* HomeViewController.swift */,
 				8B11D8A82AD59C0100AF0AAD /* Assets.xcassets */,
 				8B11D8AA2AD59C0100AF0AAD /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F05244D2AD6BF5F00A4CCB7 /* HomeViewController.swift in Sources */,
+				5F05244F2AD6DA9D00A4CCB7 /* MenuViewController.swift in Sources */,
 				8B11D8A42AD59BFF00AF0AAD /* ViewController.swift in Sources */,
 				8B11D8A02AD59BFF00AF0AAD /* AppDelegate.swift in Sources */,
 				8B11D8A22AD59BFF00AF0AAD /* SceneDelegate.swift in Sources */,
