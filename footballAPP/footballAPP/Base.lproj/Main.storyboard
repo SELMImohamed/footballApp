@@ -18,9 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liste de toutes les équipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pZG-IT-wM6">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="AAT-79-Tim" style="IBUITableViewCellStyleDefault" id="pKJ-YB-v1I">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pKJ-YB-v1I" id="KCh-dU-tU0">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -215,19 +222,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4g-w3-Ujk">
-                                        <rect key="frame" x="82.333333333333329" y="111" width="228.66666666666669" height="38"/>
+                                        <rect key="frame" x="94.333333333333329" y="111" width="204.33333333333337" height="38"/>
                                         <color key="tintColor" red="0.66666668650000005" green="0.3058823645" blue="0.1764705926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" image="basketball" catalog="system" title="Voir la liste des matchs "/>
+                                        <buttonConfiguration key="configuration" style="filled" image="basketball" catalog="system" title="Voir la liste des matchs " buttonSize="small"/>
                                         <connections>
                                             <segue destination="iC5-t6-jsm" kind="presentation" identifier="showDisplayGame" id="3JX-Th-ano"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoh-0w-wF2">
-                                        <rect key="frame" x="159" y="222" width="75" height="38"/>
+                                        <rect key="frame" x="163.66666666666666" y="222" width="65.666666666666657" height="38"/>
                                         <color key="tintColor" red="0.66666668650000005" green="0.3058823645" blue="0.1764705926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button" buttonSize="small"/>
                                     </button>
                                 </subviews>
                             </stackView>
