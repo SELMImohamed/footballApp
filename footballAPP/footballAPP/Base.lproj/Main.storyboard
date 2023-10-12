@@ -100,6 +100,58 @@
             </objects>
             <point key="canvasLocation" x="9524.4274809160306" y="1378.8732394366198"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="c8m-NB-She">
+            <objects>
+                <viewController storyboardIdentifier="detail" id="OeS-t0-t7j" customClass="DetailViewController" customModule="footballAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rr5-oC-37a">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86r-6N-PkT">
+                                <rect key="frame" x="16" y="398" width="231" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIr-fo-d8a">
+                                <rect key="frame" x="272" y="397" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcc-fN-lcB">
+                                <rect key="frame" x="272" y="254" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3y6-QF-E5v">
+                                <rect key="frame" x="16" y="254" width="231" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iX7-17-4Zu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Ej0-06-2c9"/>
+                    <connections>
+                        <outlet property="homeTeamLabel" destination="3y6-QF-E5v" id="lyz-Te-q2v"/>
+                        <outlet property="scoreHomeLabel" destination="Lcc-fN-lcB" id="qjc-OB-vjO"/>
+                        <outlet property="scoreVisitorLabel" destination="VIr-fo-d8a" id="qnM-L5-w8a"/>
+                        <outlet property="visitorTeamLabel" destination="86r-6N-PkT" id="7ki-EH-Tru"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cX-Fg-bTO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9144.2748091603044" y="2427.4647887323945"/>
+        </scene>
         <!--get a specific game-->
         <scene sceneID="pQM-Rz-Cg3">
             <objects>
@@ -209,11 +261,11 @@
                                 <rect key="frame" x="0.0" y="509" width="393" height="260"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTW-Bv-ZRG">
-                                        <rect key="frame" x="99.666666666666686" y="0.0" width="194" height="38"/>
+                                        <rect key="frame" x="97.666666666666671" y="0.0" width="197.66666666666663" height="38"/>
                                         <color key="tintColor" red="0.66666668650000005" green="0.3058823645" blue="0.1764705926" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Voir la liste des joueurs" image="list.bullet.clipboard" catalog="system"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Voir la liste des joueurs" buttonSize="small">
+                                        <buttonConfiguration key="configuration" style="filled" title="Voir la liste des équipes" buttonSize="small">
                                             <imageReference key="image" image="list.bullet.clipboard" catalog="system" symbolScale="default"/>
                                         </buttonConfiguration>
                                         <connections>

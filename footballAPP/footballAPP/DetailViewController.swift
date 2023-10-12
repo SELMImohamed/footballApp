@@ -1,29 +1,27 @@
-//
-//  DetailViewController.swift
-//  footballAPP
-//
-//  Created by Florian Cohen-Joly on 12/10/2023.
-//
-
 import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var homeTeamLabel: UILabel!
+    @IBOutlet weak var visitorTeamLabel: UILabel!
+    
+    @IBOutlet weak var scoreHomeLabel: UILabel!
+    @IBOutlet weak var scoreVisitorLabel: UILabel!
+    // Ajoutez une propriété pour stocker le jeu que vous souhaitez afficher
+    var game: Games?
+    var visitor: VisitorTeam?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Vérifiez si game est défini
+        if let game = game {
+           
+            
+            homeTeamLabel.text = game.home_team.full_name
+            scoreHomeLabel.text = "\(game.scoreHome)"
+            visitorTeamLabel.text = game.visitor_team.full_name
+            
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
