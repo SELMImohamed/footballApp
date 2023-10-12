@@ -7,31 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F05244D2AD6BF5F00A4CCB7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05244C2AD6BF5F00A4CCB7 /* HomeViewController.swift */; };
-		5F05244F2AD6DA9D00A4CCB7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05244E2AD6DA9D00A4CCB7 /* MenuViewController.swift */; };
-		5F0524512AD6E1CF00A4CCB7 /* DisplayAllGamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0524502AD6E1CF00A4CCB7 /* DisplayAllGamesTableViewController.swift */; };
 		5F0524532AD6EEA900A4CCB7 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 5F0524522AD6EEA900A4CCB7 /* models */; };
-		5F186AF42AD5EAC1008785ED /* DisplayTeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F186AF32AD5EAC1008785ED /* DisplayTeamsTableViewController.swift */; };
-		5F3414AF2AD7DE4F00C34096 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3414AE2AD7DE4F00C34096 /* DetailViewController.swift */; };
+		5FBEC73D2AD8003D00BE4B42 /* controllers in Resources */ = {isa = PBXBuildFile; fileRef = 5FBEC73C2AD8003D00BE4B42 /* controllers */; };
 		8B11D8A02AD59BFF00AF0AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D89F2AD59BFF00AF0AAD /* AppDelegate.swift */; };
 		8B11D8A22AD59BFF00AF0AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D8A12AD59BFF00AF0AAD /* SceneDelegate.swift */; };
-		8B11D8A42AD59BFF00AF0AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D8A32AD59BFF00AF0AAD /* ViewController.swift */; };
 		8B11D8A72AD59BFF00AF0AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D8A52AD59BFF00AF0AAD /* Main.storyboard */; };
 		8B11D8A92AD59C0100AF0AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D8A82AD59C0100AF0AAD /* Assets.xcassets */; };
 		8B11D8AC2AD59C0100AF0AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D8AA2AD59C0100AF0AAD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5F05244C2AD6BF5F00A4CCB7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5F05244E2AD6DA9D00A4CCB7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		5F0524502AD6E1CF00A4CCB7 /* DisplayAllGamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayAllGamesTableViewController.swift; sourceTree = "<group>"; };
 		5F0524522AD6EEA900A4CCB7 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
-		5F186AF32AD5EAC1008785ED /* DisplayTeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTeamsTableViewController.swift; sourceTree = "<group>"; };
-		5F3414AE2AD7DE4F00C34096 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5FBEC73C2AD8003D00BE4B42 /* controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = controllers; sourceTree = "<group>"; };
 		8B11D89C2AD59BFF00AF0AAD /* footballAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = footballAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B11D89F2AD59BFF00AF0AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B11D8A12AD59BFF00AF0AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B11D8A32AD59BFF00AF0AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B11D8A62AD59BFF00AF0AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B11D8A82AD59C0100AF0AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B11D8AB2AD59C0100AF0AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,19 +58,14 @@
 		8B11D89E2AD59BFF00AF0AAD /* footballAPP */ = {
 			isa = PBXGroup;
 			children = (
+				5FBEC73C2AD8003D00BE4B42 /* controllers */,
 				5F0524522AD6EEA900A4CCB7 /* models */,
 				8B11D89F2AD59BFF00AF0AAD /* AppDelegate.swift */,
 				8B11D8A12AD59BFF00AF0AAD /* SceneDelegate.swift */,
-				8B11D8A32AD59BFF00AF0AAD /* ViewController.swift */,
 				8B11D8A52AD59BFF00AF0AAD /* Main.storyboard */,
-				5F3414AE2AD7DE4F00C34096 /* DetailViewController.swift */,
-				5F05244E2AD6DA9D00A4CCB7 /* MenuViewController.swift */,
-				5F05244C2AD6BF5F00A4CCB7 /* HomeViewController.swift */,
 				8B11D8A82AD59C0100AF0AAD /* Assets.xcassets */,
 				8B11D8AA2AD59C0100AF0AAD /* LaunchScreen.storyboard */,
 				8B11D8AD2AD59C0100AF0AAD /* Info.plist */,
-				5F186AF32AD5EAC1008785ED /* DisplayTeamsTableViewController.swift */,
-				5F0524502AD6E1CF00A4CCB7 /* DisplayAllGamesTableViewController.swift */,
 			);
 			path = footballAPP;
 			sourceTree = "<group>";
@@ -143,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FBEC73D2AD8003D00BE4B42 /* controllers in Resources */,
 				8B11D8AC2AD59C0100AF0AAD /* LaunchScreen.storyboard in Resources */,
 				8B11D8A92AD59C0100AF0AAD /* Assets.xcassets in Resources */,
 				5F0524532AD6EEA900A4CCB7 /* models in Resources */,
@@ -157,14 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F05244D2AD6BF5F00A4CCB7 /* HomeViewController.swift in Sources */,
-				5F05244F2AD6DA9D00A4CCB7 /* MenuViewController.swift in Sources */,
-				8B11D8A42AD59BFF00AF0AAD /* ViewController.swift in Sources */,
 				8B11D8A02AD59BFF00AF0AAD /* AppDelegate.swift in Sources */,
-				5F0524512AD6E1CF00A4CCB7 /* DisplayAllGamesTableViewController.swift in Sources */,
 				8B11D8A22AD59BFF00AF0AAD /* SceneDelegate.swift in Sources */,
-				5F186AF42AD5EAC1008785ED /* DisplayTeamsTableViewController.swift in Sources */,
-				5F3414AF2AD7DE4F00C34096 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
