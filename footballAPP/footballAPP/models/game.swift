@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Games {
     var home_team : HomeTeam
     var visitor_team : VisitorTeam
@@ -25,8 +24,7 @@ extension Games {
               let date = json["date"] as? String,
               let scoreHome = json["home_team_score"] as? Int,
               let scoreVisitor = json["visitor_team_score"] as? Int
-                
-                
+        
         else{
             return nil
         }
@@ -37,6 +35,5 @@ extension Games {
         self.date = date
         self.scoreHome = scoreHome
         self.scoreVisitor = scoreVisitor
-        
     }
 }

@@ -12,35 +12,10 @@ import UIKit
 import WebKit
 
 
-struct HomeTeam {
-    var full_name: String
-}
 
-extension HomeTeam {
-    init?(json: [String: Any]) {
-        guard let name = json["full_name"] as? String else {
-            return nil
-        }
-
-        self.full_name = name
-    }
-}
-
-struct VisitorTeam {
-    var full_name: String
-}
-
-extension VisitorTeam {
-    init?(json: [String: Any]) {
-        guard let name = json["full_name"] as? String else {
-            return nil
-        }
-
-        self.full_name = name
-    }
-}
 
 class DisplayAllGamesTableViewController: UITableViewController {
+    
     var browsers: [Games] = []
     
     override func viewDidLoad() {
@@ -51,7 +26,7 @@ class DisplayAllGamesTableViewController: UITableViewController {
             "X-RapidAPI-Host": "free-nba.p.rapidapi.com"
         ]
         
-        let request = NSMutableURLRequest(url: NSURL(string: "https://free-nba.p.rapidapi.com/games?page=0&per_page=25")! as URL,
+        let request = NSMutableURLRequest(url: NSURL(string: "https://free-nba.p.rapidapi.com/games?page=0&per_page=100")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
                                           timeoutInterval: 10.0)
         request.httpMethod = "GET"
@@ -131,14 +106,10 @@ class DisplayAllGamesTableViewController: UITableViewController {
             let game = self.browsers[indexPath.row]
             
             vc.game = game
-
+            
             self.navigationController?.pushViewController(vc, animated: true)
-                    self.present(vc, animated: true, completion: nil)
-            
-            print(game.id)
-            
+            self.present(vc, animated: true, completion: nil)
             
         }
     }
-    
 }

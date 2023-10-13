@@ -15,16 +15,14 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
     @IBAction func getAllteams(_ sender: Any) {
         performSegue(withIdentifier: "showDisplayTeams", sender: self)
     }
+
     
     @IBAction func getAllgames(_ sender: Any) {
         performSegue(withIdentifier: "showDisplayGame", sender: self)
     }
-
-    
 }

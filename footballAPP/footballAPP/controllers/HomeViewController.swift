@@ -16,16 +16,17 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
+    @IBAction func pushHome(_ sender: UIButton) {
+        
+        sender.pulsate()
     
-    @IBAction func pushHome(_ sender: Any) {
-        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "tabbar") as? MainTabBarController {
-            
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "tabbar") as? MainTabBarController {
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true)
+            }
         }
     }
 }
